@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -19,7 +19,8 @@
     }
     body {
       font-family: system-ui, Arial, sans-serif;
-      background: var(--background);
+      background: url("./image.png") no-repeat center center fixed;
+      background-size: cover;
       color: var(--text);
       line-height: 1.6;
       display: flex;
@@ -27,7 +28,7 @@
       min-height: 100vh;
     }
     header {
-      background: var(--primary);
+      background: rgba(0, 168, 107, 0.9); /* semi-transparent overlay */
       color: #fff;
       padding: 2rem 1rem;
       text-align: center;
@@ -42,12 +43,8 @@
       max-width: 800px;
       margin: auto;
       text-align: center;
-    }
-    main img {
-      max-width: 300px;
-      height: auto;
-      margin: 1.5rem auto;
-      display: block;
+      background: rgba(255, 255, 255, 0.8); /* readable text box */
+      border-radius: 10px;
     }
     button {
       padding: 0.75rem 1.5rem;
@@ -65,7 +62,7 @@
       transform: translateY(-2px);
     }
     footer {
-      background: #f0f0f0;
+      background: rgba(240, 240, 240, 0.9);
       padding: 1rem;
       text-align: center;
       font-size: 0.9rem;
@@ -86,7 +83,6 @@
   </header>
 
   <main role="main">
-    <img src="./image.png" width="300" height="200" alt="Illustration of people cleaning the Earth together">
     <p>Be part of the global movement to clean our parks, streets, and rivers.</p>
     <button aria-label="Join the World Cleaning Day movement">🌍 Join Us</button>
   </main>
