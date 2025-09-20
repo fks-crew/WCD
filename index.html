@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Cleaning Day</title>
+  <style>
+    :root {
+      --primary: #00a86b;
+      --primary-dark: #008956;
+      --background: #f5fdf7;
+      --text: #222;
+      --muted: #555;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    main img {
+      max-width: 300px;
+      height: auto;
+      margin: 1.5rem auto;
+      display: block;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    footer {
+      background: #f0f0f0;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    footer .credit {
+      font-weight: bold;
+      color: var(--primary-dark);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    <h1>World Cleaning Day</h1>
+    <p>Let’s join hands to make our planet clean and green!</p>
+  </header>
+
+  <main role="main">
+    <img src="../image.png" width="300" height="200" alt="Illustration of people cleaning the Earth together">
+    <p>Be part of the global movement to clean our parks, streets, and rivers.</p>
+    <button aria-label="Join the World Cleaning Day movement">🌍 Join Us</button>
+  </main>
+
+  <footer role="contentinfo">
+    <span class="credit">✨ Made by The Enoch’s ✨</span>
+    &copy; <span id="year"></span> World Cleaning Day
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
